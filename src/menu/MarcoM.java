@@ -22,7 +22,7 @@ public class MarcoM extends JFrame {
 		setSize(400, 400);
         setLocation((ancho/2)-(400/2),(alto/2)-(400/2));	
 
-		setTitle("Menús");
+		setTitle("Organizador");
 		
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(true);
