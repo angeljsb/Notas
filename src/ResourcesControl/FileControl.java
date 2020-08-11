@@ -55,5 +55,10 @@ public class FileControl {
         }
         return cargado;
     }
+
+    public static void borrar(){
+        if(actual.delete())
+        setActual("Historias");
+    }
     
 }
