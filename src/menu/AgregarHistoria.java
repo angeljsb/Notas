@@ -62,7 +62,7 @@ public class AgregarHistoria extends JPanel implements IGuardable{
 
         layoutTotal.putConstraint(SpringLayout.NORTH,panelTitulo,0,SpringLayout.NORTH,this);
         layoutTotal.putConstraint(SpringLayout.SOUTH,panelTitulo,20,SpringLayout.NORTH,this);
-        layoutTotal.putConstraint(SpringLayout.NORTH,panelDescripcion,5,SpringLayout.SOUTH,panelTitulo);
+        layoutTotal.putConstraint(SpringLayout.NORTH,panelDescripcion,0,SpringLayout.SOUTH,panelTitulo);
         layoutTotal.putConstraint(SpringLayout.SOUTH,this,55,SpringLayout.SOUTH,panelDescripcion);
         layoutTotal.putConstraint(SpringLayout.NORTH,panelBoton,0,SpringLayout.SOUTH,panelDescripcion);
         layoutTotal.putConstraint(SpringLayout.SOUTH,panelBoton,0,SpringLayout.SOUTH,this);
@@ -93,6 +93,14 @@ public class AgregarHistoria extends JPanel implements IGuardable{
 
     protected String getDescripcion(){
         return descripcion.getText();
+    }
+
+    protected void setTitulo(String titulo){
+        this.titulo.setText(titulo);
+    }
+
+    protected void setDescripcion(String descripcion){
+        this.descripcion.setText(descripcion);
     }
     
 }

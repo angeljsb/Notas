@@ -31,6 +31,14 @@ public class Data implements Serializable{
         return descripcion;
     }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
     public Data[] getDatos(){
         Data[] data = new Data[datos.size()];
         for(int i=0;i<datos.size();i++)

@@ -15,6 +15,7 @@ public class LaminaMenu extends JPanel {
     private static final long serialVersionUID = 1L;
 
     public static IGuardable ultimo = null;
+    public static IEditable editar = null;
 
     public LaminaMenu() {
 
@@ -22,9 +23,18 @@ public class LaminaMenu extends JPanel {
 
         JMenuBar barra = new JMenuBar();
         JMenu archivo = new JMenu("General");
+        JMenuItem edit = new JMenuItem("Editar");
         JMenuItem guardar = new JMenuItem("Guardar");
         JMenuItem volver = new JMenuItem("Volver");
         JMenuItem inicio = new JMenuItem("Volver al inicio");
+        edit.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(editar!=null){
+                    editar.editar();
+                }
+            }
+        });
         guardar.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -45,6 +55,7 @@ public class LaminaMenu extends JPanel {
                 volverInicio();
             }
         });
+        archivo.add(edit);
         archivo.add(guardar);
         archivo.addSeparator();
         archivo.add(volver);

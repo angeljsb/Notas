@@ -18,7 +18,7 @@ public class TarjetaHistoria extends TarjetaIcono {
         FileControl.hijo(getTitulo() + ".pln");
         Data historia = (Data) FileControl.cargarObjeto();
         if(historia!=null)
-        Contenido.contenido.setContenido(getTitulo(), new HistoriaPreview(historia));
+        Contenido.contenido.setContenido(historia.getNombre(), new HistoriaPreview(historia));
         else System.out.println("No se ha encontrado el archivo");
     }
     
