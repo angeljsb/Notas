@@ -36,8 +36,8 @@ public abstract class BotonPanel extends JPanel implements MouseListener {
 
     @Override
     public void mousePressed(MouseEvent e) {
-    actual = pressed;
-    repaint();
+        actual = pressed;
+        repaint();
     }
 
     @Override
@@ -50,20 +50,19 @@ public abstract class BotonPanel extends JPanel implements MouseListener {
     }
 
     @Override
-        public void mouseEntered(MouseEvent e) {
-            actual = hover;
-            repaint();
-            setCursor(new Cursor(Cursor.HAND_CURSOR));
-            exited = false;
-}
+    public void mouseEntered(MouseEvent e) {
+        actual = hover;
+        repaint();
+        setCursor(new Cursor(Cursor.HAND_CURSOR));
+        exited = false;
+    }
 
     @Override
-        public void mouseExited(MouseEvent e) {
-            actual = base;
-            repaint();
-            setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
-            exited = true;
-
-            }
+    public void mouseExited(MouseEvent e) {
+        actual = base;
+        repaint();
+        setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+        exited = true;
+    }
     
 }
