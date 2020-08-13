@@ -9,7 +9,9 @@ public class MarcoM extends JFrame {
 
     private static final long serialVersionUID = 1L;
 
-    MarcoM() {
+    public static final MarcoM marco = new MarcoM();
+
+    private MarcoM() {
         Toolkit pantalla;
         
         Image miIcono;

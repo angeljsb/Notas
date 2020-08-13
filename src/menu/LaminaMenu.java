@@ -13,11 +13,12 @@ import ResourcesControl.FileControl;
 public class LaminaMenu extends JPanel {
 
     private static final long serialVersionUID = 1L;
+    public static final LaminaMenu lamina = new LaminaMenu();
 
     public static IGuardable ultimo = null;
     public static IEditable editar = null;
 
-    public LaminaMenu() {
+    private LaminaMenu() {
 
         this.setLayout(new BorderLayout());
 
