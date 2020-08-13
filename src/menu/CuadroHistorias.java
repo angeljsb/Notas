@@ -3,7 +3,7 @@ package menu;
 import java.awt.event.MouseWheelListener;
 import java.awt.event.MouseWheelEvent;
 import javax.swing.JPanel;
-import ResourcesControl.FileControl;
+import recursos.FileControl;
 import componentes.BotonAniadir;
 import componentes.TarjetaData;
 import componentes.TarjetaHistoria;

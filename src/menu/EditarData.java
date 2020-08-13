@@ -1,6 +1,6 @@
 package menu;
 
-import ResourcesControl.FileControl;
+import recursos.FileControl;
 
 public class EditarData extends AgregarHistoria {
 

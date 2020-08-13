@@ -1,4 +1,4 @@
-package ResourcesControl;
+package recursos;
 
 import java.io.File;
 import java.io.Serializable;

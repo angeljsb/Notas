@@ -1,4 +1,4 @@
-package ResourcesControl;
+package recursos;
 
 import javax.swing.ImageIcon;
 import java.awt.Image;

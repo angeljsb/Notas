@@ -3,7 +3,7 @@ package menu;
 import javax.swing.JFrame;
 import java.awt.Image;
 import java.awt.Toolkit;
-import ResourcesControl.ImagesControl;
+import recursos.ImagesControl;
 
 public class MarcoM extends JFrame {
 

@@ -3,7 +3,7 @@ package componentes;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import ResourcesControl.ImagesControl;
+import recursos.ImagesControl;
 import java.awt.geom.RoundRectangle2D;
 
 public abstract class TarjetaIcono extends BotonPanel {

@@ -6,7 +6,7 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Container;
 import javax.swing.SpringLayout;
-import ResourcesControl.FileControl;
+import recursos.FileControl;
 import componentes.BotonGuardar;
 import datos.Data;
 import javax.swing.JLabel;

@@ -1,6 +1,6 @@
 package menu;
 
-import ResourcesControl.FileControl;
+import recursos.FileControl;
 import datos.Data;
 
 public class AgregarData extends AgregarHistoria{

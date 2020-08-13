@@ -4,7 +4,7 @@ import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
 import java.util.ArrayList;
 import javax.swing.JPanel;
-import ResourcesControl.FileControl;
+import recursos.FileControl;
 import componentes.BotonAniadir;
 import componentes.BotonGuardar;
 import componentes.Tarjeta;

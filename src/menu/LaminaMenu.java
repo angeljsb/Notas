@@ -8,7 +8,7 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 
-import ResourcesControl.FileControl;
+import recursos.FileControl;
 
 public class LaminaMenu extends JPanel {
 

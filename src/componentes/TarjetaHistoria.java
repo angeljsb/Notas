@@ -3,7 +3,7 @@ package componentes;
 import datos.Data;
 import menu.Contenido;
 import menu.HistoriaPreview;
-import ResourcesControl.FileControl;
+import recursos.FileControl;
 
 public class TarjetaHistoria extends TarjetaIcono {
 
