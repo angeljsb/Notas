@@ -19,7 +19,7 @@ public class Tarjeta extends JPanel implements IEditable{
         setBorder(BorderFactory.createLineBorder(new Color(0), 1, true));
         setLayout(new BorderLayout());
         titulo = new TextoTitulo("Nombre");
-        contenido = new TextoTitulo("Descripción");
+        contenido = new TextoTitulo("Descripci\u00f3n");
         titulo.setDisabledTextColor(Color.DARK_GRAY);
         contenido.setDisabledTextColor(Color.DARK_GRAY);
         contenido.setLayout(new CardsLayout());
@@ -66,7 +66,7 @@ public class Tarjeta extends JPanel implements IEditable{
 
     public void borrarTexto(){
         titulo.setText("Nombre");
-        contenido.setText("Descripción");
+        contenido.setText("Descripci\u00f3n");
         titulo.setForeground(Color.GRAY);
         contenido.setForeground(Color.GRAY);
     }

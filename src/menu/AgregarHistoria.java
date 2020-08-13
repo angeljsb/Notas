@@ -36,7 +36,7 @@ public class AgregarHistoria extends JPanel implements IGuardable{
 
         JPanel panelDescripcion = new JPanel();
         panelDescripcion.setLayout(new BorderLayout());
-        panelDescripcion.add(new JLabel("Descripción: "), BorderLayout.NORTH);
+        panelDescripcion.add(new JLabel("Descripci\u00f3n: "), BorderLayout.NORTH);
         descripcion = new JTextPane();
         panelDescripcion.add(descripcion, BorderLayout.CENTER);
 
