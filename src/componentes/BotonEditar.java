@@ -2,11 +2,9 @@ package componentes;
 
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.Color;
-import java.awt.geom.Path2D;
-import java.awt.geom.Rectangle2D;
-import java.awt.geom.RoundRectangle2D;
+import java.awt.Image;
 import menu.IEditable;
+import recursos.ImagesControl;
 
 public class BotonEditar extends BotonIcono{
 
@@ -28,21 +26,8 @@ public class BotonEditar extends BotonIcono{
         super.paint(g);
 
         Graphics2D g2 = (Graphics2D) g;
-        g2.setColor(Color.WHITE);
-        int width = this.getWidth()/4;
-        int height = this.getHeight()/4;
-
-        RoundRectangle2D borra = new RoundRectangle2D.Double((this.getWidth()/2)-(width/2),
-        height/2, width, height, width/5, height/5);
-        g2.fill(borra);
-        Rectangle2D cuerpo = new Rectangle2D.Double((this.getWidth()/2)-(width/2),
-        height, width, height*2);
-        g2.fill(cuerpo);
-        Path2D punta = new Path2D.Double();
-        punta.moveTo((this.getWidth()/2)-(width/2), (height*3)+2);
-        punta.lineTo((this.getWidth()/2)+(width/2), (height*3)+2);
-        punta.lineTo(this.getWidth()/2, this.getHeight()*9/10);
-        g2.fill(punta);
+        Image lapiz = ImagesControl.crearImagen("Recursos/Editar.png").getImage();
+        g2.drawImage(lapiz, 0, 0, this.getWidth(), this.getHeight(), this);
 
     }
     
