@@ -24,6 +24,7 @@ public class LaminaMenu extends JPanel {
 
         JMenuBar barra = new JMenuBar();
         JMenu archivo = new JMenu("General");
+        JMenuItem borrar = new JMenuItem("Borrar");
         JMenuItem edit = new JMenuItem("Editar");
         JMenuItem guardar = new JMenuItem("Guardar");
         JMenuItem volver = new JMenuItem("Volver");
@@ -56,6 +57,15 @@ public class LaminaMenu extends JPanel {
                 volverInicio();
             }
         });
+        borrar.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(HistoriaPreview.dataActual!=null){
+                    Contenido.contenido.setContenido("Borrar", new BorrarData());
+                }
+            }
+        });
+        archivo.add(borrar);
         archivo.add(edit);
         archivo.add(guardar);
         archivo.addSeparator();
@@ -67,16 +77,16 @@ public class LaminaMenu extends JPanel {
         this.add(Contenido.contenido);
     }
 
-    public void volver(){
+    public static void volver(){
         if(HistoriaPreview.historiaActual!=null)
         Contenido.contenido.setContenido(HistoriaPreview.historiaActual.getNombre(),
         new HistoriaPreview(HistoriaPreview.historiaActual));
     }
 
-    public void volverInicio(){
+    public static void volverInicio(){
         FileControl.setActual("Historias");
         Contenido.contenido.setContenido("Temas",new CuadroHistorias());
-        updateUI();
+        lamina.updateUI();
     }
     
 }
