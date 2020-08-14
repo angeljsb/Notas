@@ -9,7 +9,7 @@ import menu.IMostrador;
 public class BotonAniadir extends BotonIcono {
 
     private static final long serialVersionUID = 1L;
-    private IMostrador padre;
+    private final IMostrador padre;
 
     public BotonAniadir(IMostrador parent) {
         super();

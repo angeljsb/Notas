@@ -3,7 +3,8 @@ package componentes;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.geom.Ellipse2D;
+//import java.awt.geom.Ellipse2D;
+import formas.Circulo;
 
 public abstract class BotonIcono extends BotonPanel {
     
@@ -19,7 +20,9 @@ public abstract class BotonIcono extends BotonPanel {
 
         Graphics2D g2 = (Graphics2D) g;
         g2.setColor(getActual());
-        g2.fill(new Ellipse2D.Float(0,0,this.getWidth(),this.getHeight()));
+        Circulo circulo = new Circulo(0,0,this.getWidth());
+        circulo.llenar(g2);
+        //g2.fill(new Ellipse2D.Float(0,0,this.getWidth(),this.getHeight()));
     }
 
 }
