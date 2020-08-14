@@ -68,6 +68,7 @@ public class LaminaMenu extends JPanel {
     }
 
     public void volver(){
+        if(HistoriaPreview.historiaActual!=null)
         Contenido.contenido.setContenido(HistoriaPreview.historiaActual.getNombre(),
         new HistoriaPreview(HistoriaPreview.historiaActual));
     }
@@ -75,6 +76,7 @@ public class LaminaMenu extends JPanel {
     public void volverInicio(){
         FileControl.setActual("Historias");
         Contenido.contenido.setContenido("Temas",new CuadroHistorias());
+        updateUI();
     }
     
 }
