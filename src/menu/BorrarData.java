@@ -47,7 +47,7 @@ public class BorrarData extends JPanel {
 
         JPanel panelText = new JPanel();
 
-        JLabel label = new JLabel("¿Desea borrar el tema " + 
+        JLabel label = new JLabel("\u00bfDesea borrar el tema " + 
             HistoriaPreview.dataActual.getNombre() + "?");
         panelText.add(label);
         dialog.add(panelText, BorderLayout.NORTH);
@@ -55,7 +55,7 @@ public class BorrarData extends JPanel {
         JPanel panelBotones = new JPanel();
         panelBotones.setLayout(new LayoutBotones());
 
-        BotonSeleccionable aceptar = new BotonSeleccionable("Sí"){
+        BotonSeleccionable aceptar = new BotonSeleccionable("S\u00ed"){
             private static final long serialVersionUID = 1L;
             @Override
             protected void accion() {                
