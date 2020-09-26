@@ -1,13 +1,15 @@
-## Getting Started
+## Aplicación
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Esta es una aplicación de notas que organiza la información de manera jerarquica
 
 ## Folder Structure
 
-The workspace contains two folders by default, where:
+El espacio de trabajo está dividido en carpetas:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- `src`: La carpeta principal para los recursos
+- `lib`: Carpeta para agregar dependencias
+- `Recursos`: Guarda imagenes y otros recursos necesarios
+- `Historias`: Contiene los archivos con datos guardados por la aplicación
 
 ## Dependency Management
 
