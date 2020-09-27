@@ -9,7 +9,6 @@ El espacio de trabajo está dividido en carpetas:
 - `src`: La carpeta principal para los recursos
 - `lib`: Carpeta para agregar dependencias
 - `Recursos`: Guarda imagenes y otros recursos necesarios
-- `Historias`: Contiene los archivos con datos guardados por la aplicación
 
 ## Dependency Management
 
